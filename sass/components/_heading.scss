@@ -1,0 +1,14 @@
+.heading{
+    color: var(--color-primary);
+    &__primary{
+        font-size: 3.2rem;
+        font-weight: 200;
+    }
+
+    &__secondary{
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    
+}

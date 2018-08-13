@@ -1,0 +1,26 @@
+{
+  "name": "university-re_registration-website",
+  "version": "1.0.0",
+  "description": "re-registration page for university",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass ./sass/main.scss ./css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel watch:sass devserver",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeWeeD0/university-re_registration-website.git"
+  },
+  "author": "Shubham Biswas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeWeeD0/university-re_registration-website/issues"
+  },
+  "homepage": "https://github.com/CodeWeeD0/university-re_registration-website#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3"
+  }
+}
