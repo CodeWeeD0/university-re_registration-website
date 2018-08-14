@@ -1,0 +1,12 @@
+.footer{
+    display: block;
+    height: 3.7rem;
+    border-top: .1rem solid var(--color-grey-dark-2);
+    &__text{
+        position: relative;
+        width:30rem;
+        display: block;
+        font-size: 1.4rem;
+        margin: 1rem auto; 
+    }
+}

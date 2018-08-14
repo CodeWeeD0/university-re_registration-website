@@ -11,7 +11,21 @@
 
    .menu{
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 2rem;
     list-style-type: none;
+    min-height: 50rem;
+
+    &__items{
+        cursor: pointer;
+        padding: 1.2rem;
+        transition: all .2s;
+        &:not(:last-child){
+            border-bottom: .1rem solid var(--color-grey-dark-3);
+        }
+
+        &:hover{
+            color: var(--color-primary-light);
+        }
+    }
    }
 }
