@@ -6,10 +6,10 @@
   100% {
     transform: scale(1); } }
 
-@keyframes moveInLeft {
+@keyframes moveInRight {
   0% {
     opacity: 1;
-    transform: translateX(-300px); }
+    transform: translateX(300px); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -54,7 +54,7 @@ body {
 
 .heading {
   color: var(--color-primary);
-  animation: moveInLeft .5s; }
+  animation: moveInRight .5s; }
   .heading__primary {
     font-size: 3.2rem;
     font-weight: 200; }
@@ -66,7 +66,7 @@ body {
 .logo {
   width: 12%;
   padding: .5rem;
-  animation: moveInTop .3s .2s; }
+  animation: moveInTop .5s; }
 
 .content {
   display: flex; }
@@ -78,22 +78,32 @@ body {
   justify-content: space-between;
   flex: 0 0 18%; }
   .sidebar .menu {
-    color: #fff;
-    font-size: 2rem;
-    list-style-type: none;
     min-height: 50rem; }
     .sidebar .menu__items {
-      cursor: pointer;
-      padding: 1.2rem;
-      transition: all .2s; }
-      .sidebar .menu__items:not(:last-child) {
-        border-bottom: 0.1rem solid var(--color-grey-dark-3); }
-      .sidebar .menu__items:hover {
-        color: var(--color-primary-light); }
+      display: flex;
+      flex-direction: column;
+      list-style-type: none; }
+      .sidebar .menu__items-link:link, .sidebar .menu__items-link:visited {
+        color: #fff;
+        font-size: 1.8rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        padding: 1.5rem 2rem;
+        transition: color .2s, transform .1s; }
+      .sidebar .menu__items-link:hover {
+        color: var(--color-primary-light);
+        transform: translateY(-2px);
+        transform: scale(1.1); }
+      .sidebar .menu__items-link:active, .sidebar .menu__items-link:focus {
+        transform: translateY(0px);
+        transform: scale(1);
+        color: var(--color-primary); }
 
 .footer {
   display: block;
   height: 3.7rem;
+  background-color: var(--color-grey-light-4);
   border-top: 0.1rem solid var(--color-grey-dark-2); }
   .footer__text {
     position: relative;
@@ -105,7 +115,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  background-color: var(--color-grey-light-3); }
+  background-color: var(--color-grey-light-4); }
 
 .container {
   max-width: 120rem;

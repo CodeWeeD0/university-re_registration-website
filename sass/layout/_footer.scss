@@ -1,6 +1,7 @@
 .footer{
     display: block;
     height: 3.7rem;
+    background-color: var(--color-grey-light-4);
     border-top: .1rem solid var(--color-grey-dark-2);
     &__text{
         position: relative;

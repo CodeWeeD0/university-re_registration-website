@@ -10,21 +10,36 @@
    flex: 0 0 18%;
 
    .menu{
-    color: #fff;
-    font-size: 2rem;
-    list-style-type: none;
+    
     min-height: 50rem;
 
     &__items{
-        cursor: pointer;
-        padding: 1.2rem;
-        transition: all .2s;
-        &:not(:last-child){
-            border-bottom: .1rem solid var(--color-grey-dark-3);
-        }
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
 
-        &:hover{
+        &-link:link,
+        &-link:visited{
+            color: #fff;
+            font-size: 1.8rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: block;
+            padding: 1.5rem 2rem;
+            transition: color .2s,
+                        transform .1s;
+            
+        }
+        &-link:hover{
             color: var(--color-primary-light);
+            transform: translateY(-2px);
+            transform: scale(1.1);
+        }
+        &-link:active,
+        &-link:focus{
+            transform: translateY(0px);
+            transform: scale(1);
+            color: var(--color-primary);
         }
     }
    }
