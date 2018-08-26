@@ -1,19 +1,41 @@
-document.querySelector('#menu__items-home').addEventListener('click',function(){
-    document.querySelectorAll('.canvas__element').style.visibility = 'hidden';
-    document.querySelector('#home').style.visibility = 'visible';
+var sidebar = {
+    home : document.getElementById('menu__items-home'),
+    reReg : document.getElementById('menu__items-reReg'),
+    chkStat : document.getElementById('menu__items-chkStat'),
+    help : document.getElementById('menu__items-help')
+};
+
+var canvas = {
+    home : document.getElementById('home'),
+    reReg : document.getElementById('reReg'),
+    chkStat : document.getElementById('chkStat'),
+    help : document.getElementById('help')
+};
+
+sidebar.home.addEventListener('click', function(){
+    canvas.home.style.visibility = 'visible';
+    canvas.reReg.style.visibility = 'hidden';
+    canvas.chkStat.style.visibility = 'hidden';
+    canvas.help.style.visibility = 'hidden';
 });
 
-document.querySelector('#menu__items-reReg').addEventListener('click',function(){
-    document.styleSheets[0].canvas__element.visibility = 'hidden';
-    document.querySelector('#reReg').style.visibility = 'visible';
+sidebar.reReg.addEventListener('click', function(){
+    canvas.home.style.visibility = 'hidden';
+    canvas.reReg.style.visibility = 'visible';
+    canvas.chkStat.style.visibility = 'hidden';
+    canvas.help.style.visibility = 'hidden';
 });
 
-document.querySelector('#menu__items-chkStat').addEventListener('click',function(){
-    document.querySelectorAll('.canvas__element').style.visibility = 'hidden';
-    document.querySelector('#chkStat').style.visibility = 'visible';
+sidebar.chkStat.addEventListener('click', function(){
+    canvas.home.style.visibility = 'hidden';
+    canvas.reReg.style.visibility = 'hidden';
+    canvas.chkStat.style.visibility = 'visible';
+    canvas.help.style.visibility = 'hidden';
 });
 
-document.querySelector('#menu__items-help').addEventListener('click',function(){
-    document.querySelectorAll('.canvas__element').style.visibility = 'hidden';
-    document.querySelector('#help').style.visibility = 'visible';
+sidebar.help.addEventListener('click', function(){
+    canvas.home.style.visibility = 'hidden';
+    canvas.reReg.style.visibility = 'hidden';
+    canvas.chkStat.style.visibility = 'hidden';
+    canvas.help.style.visibility = 'visible';
 });
