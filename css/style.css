@@ -23,9 +23,10 @@
     transform: translate(0); } }
 
 :root {
-  --color-primary: #2f66bc;
+  --color-primary: #306ccc;
   --color-primary-light: #87b5ff;
   --color-primary-dark: #3082ff;
+  --color-click: #9fbff2;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
@@ -98,7 +99,10 @@ body {
       .sidebar .menu__items-link:active, .sidebar .menu__items-link:focus {
         transform: translateY(0px);
         transform: scale(1);
-        color: var(--color-primary); }
+        color: var(--color-click); }
+
+.canvas__element:not(:first-child) {
+  visibility: hidden; }
 
 .footer {
   display: block;

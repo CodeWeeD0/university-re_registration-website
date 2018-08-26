@@ -1,0 +1,7 @@
+.canvas{
+    &__element:not(:first-child){
+        //display: none;
+        visibility: hidden;
+    }
+
+}
