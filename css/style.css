@@ -22,6 +22,14 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes glow {
+  0% {
+    text-shadow: none; }
+  50% {
+    text-shadow: #35fff1 1px 1px 10px; }
+  100% {
+    text-shadow: none; } }
+
 :root {
   --color-primary: #306ccc;
   --color-primary-light: #87b5ff;
@@ -101,8 +109,65 @@ body {
         transform: scale(1);
         color: var(--color-click); }
 
-.canvas__element:not(:first-child) {
-  visibility: hidden; }
+.canvas {
+  width: 100%;
+  background-color: var(--color-grey-light-1); }
+  .canvas__element:not(:first-child) {
+    display: none; }
+  .canvas__home-title {
+    padding-top: 1rem;
+    width: 55rem;
+    position: relative;
+    display: block;
+    font-size: 2rem;
+    margin: auto;
+    text-transform: uppercase;
+    color: var(--color-primary-dark);
+    text-shadow: #9fbff2 1px 1px 10px; }
+    .canvas__home-title-note {
+      padding-top: .5rem;
+      width: 55rem;
+      position: relative;
+      display: block;
+      font-size: 1.2rem;
+      margin: auto;
+      padding-left: 9rem;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      text-shadow: #9fbff2 1px 1px 10px;
+      animation: glow 1.5s infinite; }
+  .canvas__home-header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-grey-light-4); }
+  .canvas__home-box {
+    margin: 5rem 10rem 5rem 10rem;
+    border: 1.5px solid var(--color-grey-light-4);
+    border-radius: 5px; }
+    .canvas__home-box .instruction__title {
+      display: block;
+      font-size: 1.8rem !important;
+      font-weight: 200;
+      padding: 1rem 0 0 1rem;
+      text-transform: uppercase;
+      color: var(--color-primary); }
+  .canvas__home-instructions {
+    padding: 2rem;
+    font-size: 1.5rem;
+    list-style: none; }
+    .canvas__home-instructions .instruction__list {
+      margin-bottom: .5rem; }
+      .canvas__home-instructions .instruction__list::before {
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        margin-right: .5rem;
+        /*
+                    background-image: url(../img/forward.svg);
+                    background-size: cover; */
+        background-color: var(--color-primary-dark);
+        -webkit-mask-image: url(../img/forward.svg);
+        -webkit-mask-size: cover; }
 
 .footer {
   display: block;

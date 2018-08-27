@@ -35,3 +35,12 @@
 		transform: translate(0);
 	}
 }
+
+@keyframes glow {
+	0% {
+	  text-shadow: none; }
+	50% {
+	  text-shadow: #35fff1 1px 1px 10px }
+	100% {
+	  text-shadow: none; } 
+	}

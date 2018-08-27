@@ -1,3 +1,4 @@
+//DOM objects
 var sidebar = {
     home : document.getElementById('menu__items-home'),
     reReg : document.getElementById('menu__items-reReg'),
@@ -12,30 +13,31 @@ var canvas = {
     help : document.getElementById('help')
 };
 
+//Logic for the sidebar
 sidebar.home.addEventListener('click', function(){
-    canvas.home.style.visibility = 'visible';
-    canvas.reReg.style.visibility = 'hidden';
-    canvas.chkStat.style.visibility = 'hidden';
-    canvas.help.style.visibility = 'hidden';
+    canvas.home.style.display = 'block';
+    canvas.reReg.style.display = 'none';
+    canvas.chkStat.style.display = 'none';
+    canvas.help.style.display = 'none';
 });
 
 sidebar.reReg.addEventListener('click', function(){
-    canvas.home.style.visibility = 'hidden';
-    canvas.reReg.style.visibility = 'visible';
-    canvas.chkStat.style.visibility = 'hidden';
-    canvas.help.style.visibility = 'hidden';
+    canvas.home.style.display = 'none';
+    canvas.reReg.style.display = 'block';
+    canvas.chkStat.style.display = 'none';
+    canvas.help.style.display = 'none';
 });
 
 sidebar.chkStat.addEventListener('click', function(){
-    canvas.home.style.visibility = 'hidden';
-    canvas.reReg.style.visibility = 'hidden';
-    canvas.chkStat.style.visibility = 'visible';
-    canvas.help.style.visibility = 'hidden';
+    canvas.home.style.display = 'none';
+    canvas.reReg.style.display = 'none';
+    canvas.chkStat.style.display = 'block';
+    canvas.help.style.display = 'none';
 });
 
 sidebar.help.addEventListener('click', function(){
-    canvas.home.style.visibility = 'hidden';
-    canvas.reReg.style.visibility = 'hidden';
-    canvas.chkStat.style.visibility = 'hidden';
-    canvas.help.style.visibility = 'visible';
+    canvas.home.style.display = 'none';
+    canvas.reReg.style.display = 'none';
+    canvas.chkStat.style.display = 'none';
+    canvas.help.style.display = 'block';
 });
