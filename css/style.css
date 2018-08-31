@@ -181,54 +181,74 @@ body {
     border-radius: 5px;
     padding: 3rem;
     margin: 10rem auto;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    background-color: #ededed; }
     .canvas__reReg-box-header {
       font-size: 2rem;
       font-weight: 500;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       text-transform: uppercase; }
-    .canvas__reReg-box .form__group {
-      padding: .25rem 0; }
-    .canvas__reReg-box .form__input {
-      border: none;
-      padding: 1rem 2rem;
-      border-radius: 3px;
-      margin-bottom: 1rem;
-      width: 90%; }
-      .canvas__reReg-box .form__input:focus {
-        outline: none;
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-        border-bottom: 3px solid var(--color-primary); }
-      .canvas__reReg-box .form__input:focus:invalid {
-        border-bottom: 3px solid #e56b37; }
-      .canvas__reReg-box .form__input::-webkit-input-placeholder {
-        color: var(--color-grey-dark-3); }
-    .canvas__reReg-box .form__label {
-      font-size: 1.2rem;
-      margin-top: .7rem;
-      margin-left: 2rem;
-      display: block;
-      transition: all .2s; }
-    .canvas__reReg-box .form__input:placeholder-shown + .form__label {
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-15px); }
-    .canvas__reReg-box .form__btn {
-      width: 25%; }
-      .canvas__reReg-box .form__btn, .canvas__reReg-box .form__btn:link, .canvas__reReg-box .form__btn:visited {
-        text-transform: uppercase;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-        padding: .5rem .5rem;
-        border-radius: 3px; }
-      .canvas__reReg-box .form__btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0px 0.5rem 0.5rem rgba(0, 0, 0, 0.2); }
-      .canvas__reReg-box .form__btn:active, .canvas__reReg-box .form__btn:focus {
-        outline: none;
-        transform: translateY(-1px);
-        box-shadow: 0 0.1rem 0.1px rgba(0, 0, 0, 0.2); }
+  .canvas__chkStat-box {
+    height: 20rem;
+    border: 1.5px solid var(--color-grey-light-4);
+    border-radius: 5px;
+    width: 40%;
+    padding: 3rem;
+    margin: 15rem auto;
+    background-color: #ededed; }
+    .canvas__chkStat-box-header {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase; }
+
+.form__group {
+  padding: .25rem 0; }
+
+.form__input {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  width: 90%; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid var(--color-primary); }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #e56b37; }
+  .form__input::-webkit-input-placeholder {
+    color: var(--color-grey-dark-3); }
+
+.form__label {
+  font-size: 1.2rem;
+  margin-top: .3rem;
+  margin-left: 2rem;
+  margin-bottom: .8rem;
+  display: block;
+  transition: all .2s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px); }
+
+.form__btn {
+  width: 25%; }
+  .form__btn, .form__btn:link, .form__btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    padding: .5rem .5rem;
+    border-radius: 3px; }
+  .form__btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 0.5rem 0.5rem rgba(0, 0, 0, 0.2); }
+  .form__btn:active, .form__btn:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.1rem 0.1px rgba(0, 0, 0, 0.2); }
 
 .footer {
   display: block;

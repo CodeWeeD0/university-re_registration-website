@@ -80,7 +80,19 @@
                         </div>
 
                         <div class="canvas__chkStat canvas__element" id="chkStat">
-                            CheCk Status
+                            <div class="canvas__chkStat-box">
+                                    <div class="canvas__chkStat-box-header">Check Re-registration Status</div>
+                                <form action="#" class="canvas__chkStat-form">
+                                        <div class="form__group">
+                                                <input type="tel" class="form__input" placeholder="Enrollment number" id="enrollNum" pattern="[0-9]+"
+                                                maxlength="10" minlength="9" required>
+                                                <label for="name" class="form__label">Enrollment number</label>
+                                        </div>
+                                        <div class="form__group">
+                                                <button class="form__btn">Check &#128273;</button>
+                                        </div>  
+                                </form>
+                            </div>
                         </div>
 
                         <div class="canvas__help canvas__element" id="help">
