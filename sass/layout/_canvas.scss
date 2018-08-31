@@ -78,9 +78,28 @@
 
         &-footer{
             position: absolute;
-            top: 60rem;
+            top: 50rem;
             left: 50rem;
             font-size: 1.3rem;
+
+            @include respond(tab-land){
+                top: 50rem;
+                left: 40rem;
+            }
+            @include respond(tab-port){
+                top: 48rem;
+                left: 30rem;
+            }
+
+            @include respond(phone){
+                top: 46rem;
+                left: 22rem;
+            }
+
+            @include respond(Sphone){
+                top: 44rem;
+                left: 10rem;
+            }
         }
     }
 
@@ -96,6 +115,13 @@
             backface-visibility: hidden;
             background-color: #ededed;
 
+            @include respond(phone){
+                width: 40%;
+                height: 28rem;
+                margin: 5rem auto; 
+                padding: 1.8rem;
+            }
+
             &-header{
                 font-size: 2rem;
                 font-weight: 500;
@@ -108,14 +134,17 @@
     
     &__chkStat{
         &-box{
-            height: 20rem;
+            height: 25rem;
             border: 1.5px solid var(--color-grey-light-4);
             border-radius: 5px;
             width: 40%;
             padding: 3rem;
             margin: 15rem auto;
             background-color: #ededed;
-
+            @include respond(phone){
+                height: 22rem;
+                margin: 5rem auto;
+            }
             &-header{
                 font-size: 1.8rem;
                 font-weight: 500;
@@ -171,7 +200,7 @@
 }
 
 .form__btn{
-    width: 25%;
+    width: 30%;
     
     &,
     &:link,
@@ -182,6 +211,14 @@
         cursor: pointer;
         padding:  .5rem .5rem;
         border-radius: 3px;
+
+        @include respond(tab-land){
+            font-size: 1.5rem;
+        }
+
+        @include respond(tab-port){
+            font-size: 1.2rem;
+        }
     }
 
     &:hover{
