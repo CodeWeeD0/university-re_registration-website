@@ -19,6 +19,18 @@
             color: var(--color-primary-dark);
             text-shadow: #9fbff2 1px 1px 10px;
 
+            @include respond(phone){
+                font-size: 2.5rem;
+                width: 54rem;
+                margin: auto;
+            }
+
+            @include respond(Sphone){
+                font-size: 3rem;
+                width: 45rem;
+                margin: auto;
+            }
+
             &-note{
                 padding-top: .5rem;
                 width: 55rem;
@@ -31,6 +43,18 @@
                 color: var(--color-primary);
                 text-shadow: #9fbff2 1px 1px 10px;
                 animation: glow 1.5s infinite;
+                
+                @include respond(phone){
+                    font-size: 2rem;
+                    width: 45rem;
+                    padding-left: 0;
+                }
+
+                @include respond(Sphone){
+                    font-size: 2rem;
+                    width: 30rem;
+                }
+
             }
         }
         &-header{
@@ -43,14 +67,12 @@
             border: 1.5px solid var(--color-grey-light-4);
             border-radius: 5px;
             background-color: var(--color-grey-dark-3);
-            .instruction__title{
-                display: block;
-                font-size: 1.8rem !important;
-                font-weight: 200;
-                padding: 1rem 0 0 1rem;
-                text-transform: uppercase;
-                color: var(--color-primary);
+
+            @include respond(Sphone){
+                height: 12rem;
+                margin: 3rem 5rem 3rem 5rem; 
             }
+            
         }
 
         &-instructions{
@@ -74,6 +96,16 @@
                     -webkit-mask-size: cover;
                 }
             }
+
+            @include respond(phone){
+                font-size: 2rem;
+                padding: 1rem;
+            }
+
+            @include respond(Sphone){
+                font-size: 2.5rem;
+                padding: 1rem;
+            }
         }
 
         &-footer{
@@ -92,13 +124,15 @@
             }
 
             @include respond(phone){
-                top: 46rem;
+                top: 53rem;
                 left: 22rem;
+                font-size: 1.8rem;
             }
 
             @include respond(Sphone){
-                top: 44rem;
-                left: 10rem;
+                top: 47rem;
+                left: 15rem;
+                font-size: 2.5rem;
             }
         }
     }
@@ -127,6 +161,10 @@
                 font-weight: 500;
                 margin-bottom: 1.5rem;
                 text-transform: uppercase;
+
+                @include respond(Sphone){
+                    font-size: 3rem;
+                }
             }
         }
 
@@ -142,14 +180,23 @@
             margin: 15rem auto;
             background-color: #ededed;
             @include respond(phone){
-                height: 22rem;
+                height: 20rem;
                 margin: 5rem auto;
             }
+
             &-header{
                 font-size: 1.8rem;
                 font-weight: 500;
                 margin-bottom: 1.5rem;
                 text-transform: uppercase;
+
+                @include respond(phone){
+                    font-size: 2rem;
+                }
+
+                @include respond(Sphone){
+                    font-size: 2.5rem;
+                }
             }
 
         }
@@ -181,6 +228,10 @@
     
     &::-webkit-input-placeholder{
         color: var(--color-grey-dark-3);
+    }
+
+    @include respond(Sphone){
+        padding: .5rem 1rem;
     }
 }
 
@@ -219,6 +270,14 @@
         @include respond(tab-port){
             font-size: 1.2rem;
         }
+
+        @include respond(phone){
+            font-size: 1.8rem;
+        }
+
+        @include respond(Sphone){
+            font-size: 2.4rem;
+        }
     }
 
     &:hover{
@@ -231,5 +290,18 @@
         outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .1rem .1px rgba(#000,0.2);
+    }
+}
+
+.instruction__title{
+    display: block;
+    font-size: 1.8rem !important;
+    padding: 1rem 0 0 1rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+
+    @include respond(Sphone){
+        font-size: 5rem;
+        padding: .5rem 0 0 .5rem;
     }
 }

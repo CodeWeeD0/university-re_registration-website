@@ -49,12 +49,16 @@
             }
             
             @include respond(tab-port){
-                font-size: 1.5rem;
+                font-size: 2rem;
                 padding: 1rem 1.2rem;
             }
 
             @include respond(phone){
-                font-size: 1.2rem;
+                font-size: 3rem;
+                padding: .8rem 1rem;
+            }
+            @include respond(Sphone){
+                font-size: 4rem;
                 padding: .8rem 1rem;
             }
             

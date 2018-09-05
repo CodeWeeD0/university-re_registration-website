@@ -11,4 +11,24 @@
         text-transform: uppercase;
     }
     animation: moveInRight .5s;
+
+    @include respond(phone){
+        &__primary{
+            font-size: 5rem
+        }
+
+        &__secondary{
+            font-size: 3rem;
+        }
+    }
+
+    @include respond(Sphone){
+        &__primary{
+            font-size: 7.5rem
+        }
+
+        &__secondary{
+            font-size: 4.5rem;
+        }
+    }
 }
