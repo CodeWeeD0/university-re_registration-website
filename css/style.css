@@ -229,7 +229,7 @@ body {
     border: 1.5px solid var(--color-grey-light-4);
     border-radius: 5px;
     background-color: var(--color-grey-dark-3); }
-    @media (max-width: 28.5em) {
+    @media (max-width: 37.5em) {
       .canvas__home-box {
         height: 14rem;
         margin: 4rem 5rem 4rem 5rem; } }

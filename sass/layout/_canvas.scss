@@ -68,11 +68,10 @@
             border-radius: 5px;
             background-color: var(--color-grey-dark-3);
 
-            @include respond(Sphone){
+            @include respond(phone){
                 height: 14rem;
                 margin: 4rem 5rem 4rem 5rem; 
             }
-            
         }
 
         &-instructions{
